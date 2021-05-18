@@ -1,0 +1,93 @@
+cask_args appdir: '/Applications'
+
+# Terminal
+cask 'iterm2'
+cask 'kitty'
+cask 'alacritty'
+
+# Shells
+brew 'bash'
+# INFO: Need to add `/usr/local/bin/zsh` to `/etc/shells`
+brew 'zsh'
+# INFO: Need to add `/usr/local/bin/fish` to `/etc/shells`
+brew 'fish'
+
+# Multiplexer
+brew 'screen'
+brew 'tmux'
+
+# Monitoring
+brew 'htop'
+brew 'iftop'
+brew 'ctop'
+tap 'clementtsang/bottom'
+brew 'bottom'
+
+# Search
+brew 'ack'
+brew 'ripgrep'
+brew 'the_silver_searcher'
+brew 'fd'
+
+# Editors
+brew 'vim'
+brew 'neovim'
+
+# Libraries
+brew 'bat'
+brew 'ccat'
+brew 'curl'
+brew 'ctags'
+brew 'diff-so-fancy'
+brew 'highlight'
+brew 'exa'
+brew 'fswatch'
+brew 'fzf'
+brew 'gnupg'
+brew 'ncurses'
+brew 'jq'
+brew 'youtube-dl'
+brew 'rclone'
+brew 'tldr'
+brew 'translate-shell'
+brew 'wget'
+brew 'watch'
+brew 'watchman'
+brew 'vifm'
+brew 'openssl'
+cask 'karabiner-elements'
+brew 'imagemagick'
+cask 'handbrake'
+brew 'moreutils'
+brew 'neofetch'
+brew 'vip'
+
+# Git
+brew 'git'
+brew 'git-lfs'
+brew 'git-flow-avh'
+brew 'git-extras'
+brew 'git-secrets'
+brew 'tig'
+brew 'lazygit'
+# https://github.com/git-time-metric/gtm
+tap 'git-time-metric/gtm'
+brew 'git-time-metric/gtm/gtm'
+
+# Chat
+brew 'weechat'
+
+# Players
+brew 'mpv'
+
+# Music
+brew 'cmus'
+brew 'ncmpcpp'
+brew 'mpd'
+brew 'vimpc'
+brew 'mps-youtube'
+
+# Networking
+brew 'nmap'
+brew 'wrk'
+brew 'telnet'

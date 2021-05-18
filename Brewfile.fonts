@@ -1,0 +1,25 @@
+cask_args appdir: '/Applications'
+
+tap 'homebrew/cask-fonts'
+
+# Hack
+cask 'font-hack'
+cask 'font-hack-nerd-font'
+cask 'font-hack-nerd-font-mono'
+
+# Fira Code
+cask 'font-fira-code'
+cask 'font-firacode-nerd-font'
+cask 'font-firacode-nerd-font-mono'
+
+# JetBrains
+cask 'font-jetbrains-mono'
+cask 'font-jetbrainsmono-nerd-font'
+cask 'font-jetbrainsmono-nerd-font-mono'
+
+# SourceCodePro
+cask 'font-sourcecodepro-nerd-font'
+cask 'font-sourcecodepro-nerd-font-mono'
+
+# Meslog
+cask 'font-meslo-lg-nerd-font'

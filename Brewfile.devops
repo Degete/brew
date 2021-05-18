@@ -1,0 +1,21 @@
+cask_args appdir: '/Applications'
+
+# Infrastructure
+brew 'ansible'
+brew 'ansible-lint'
+brew 'ansible-cmdb'
+cask 'docker'
+brew 'lazydocker'
+brew 'kubernetes-cli'
+brew 'k9s'
+brew 'minikube'
+brew 'kompose'
+brew 'kustomize'
+brew 'terraform'
+brew 'tfenv'
+brew 'helm'
+
+# Cloud platforms
+brew 'awscli'
+cask 'google-cloud-sdk'
+brew 'azure-cli'

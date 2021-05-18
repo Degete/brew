@@ -1,0 +1,100 @@
+cask_args appdir: '/Applications'
+
+# File Archiver
+brew 'p7zip'
+brew 'xz'
+cask 'keka', greedy: true
+
+# Gif
+cask 'kap'
+cask 'gifcapture'
+
+# Markdown
+cask 'macdown'
+cask 'typora'
+
+# Calendar
+cask 'itsycal'
+
+# Quick Look Plugins
+cask 'ql-ansilove'
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'qlmobi'
+
+# Monitoring
+cask 'stats'
+cask 'eul'
+
+# FTP/SFTP
+cask 'cyberduck'
+
+# Browsers
+cask 'google-chrome'
+cask 'chromedriver'
+cask 'firefox'
+cask 'firefox-developer-edition'
+brew 'geckodriver'
+cask 'vivaldi'
+cask 'microsoft-edge'
+
+cask 'sequel-pro-nightly'
+cask 'sublime-merge-dev'
+cask 'sublime-text-dev'
+cask 'suspicious-package'
+cask 'transmission'
+cask 'tunnelblick'
+cask 'typora'
+cask 'virtualbox'
+cask 'virtualbox-extension-pack'
+cask 'vlc'
+
+cask 'anki'
+cask 'appcleaner'
+cask 'cheatsheet'
+cask 'dozer'
+
+# Screensaver
+cask 'brooklyn'
+
+# Design
+cask 'blender'
+cask 'godot'
+cask 'krita'
+cask 'inkscape'
+
+# Office
+cask 'microsoft-office'
+cask 'microsoft-auto-update'
+
+# Window Management
+mas 'Magnet', id: 441258766
+cask 'rectangle'
+cask 'tiles'
+brew 'koekeishiya/formulae/skhd'
+brew 'koekeishiya/formulae/yabai'
+cask 'amethyst'
+
+# eBooks
+cask 'calibre'
+
+# Players
+cask 'iina'
+cask 'kodi'
+
+# Clipboard management
+cask 'maccy'
+
+# Image processing
+cask 'imageoptim'
+
+# SNS
+mas 'Slack', id: 803453959
+cask 'telegram'
+mas 'LINE', id: 539883307
+mas 'KakaoTalk', id: 869223134
+cask 'wechat'
+cask 'skype'
+
+mas 'Microsoft OneNote', id: 784801555
+mas 'Translate Tab', id: 458887729

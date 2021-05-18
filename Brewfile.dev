@@ -1,0 +1,75 @@
+cask_args appdir: '/Applications'
+
+tap 'github/gh'
+
+# IDE's
+cask 'visual-studio-code'
+cask 'visual-studio-code-insiders'
+cask 'intellij-idea'
+
+# Android
+cask 'android-studio'
+brew 'gradle'
+
+# C
+brew 'cmake'
+brew 'llvm'
+brew 'gdb'
+brew 'gcc'
+
+# Git
+cask 'fork'
+brew 'gh'
+
+# API Client
+cask 'insomnia'
+
+# Python
+brew 'python'
+brew 'pipenv'
+brew 'pyenv'
+
+# iOS
+brew 'carthage'
+brew 'cocoapods'
+cask 'ios-app-signer'
+
+# PHP
+brew 'php'
+brew 'composer'
+
+# NodeJS
+brew 'node'
+brew 'yarn'
+
+# Forensic
+brew 'radare2'
+cask 'cutter'
+
+# Java
+cask 'java' unless system "/usr/libexec/java_home --failfast"
+brew 'openjdk'
+
+# Go
+brew 'go'
+
+# Kotlin
+brew 'kotlin'
+
+# Ruby
+brew 'ruby'
+brew 'rbenv'
+
+# Rust
+brew 'rustup-init'
+
+# Shellscript
+brew 'shellcheck'
+
+# Database
+brew 'mysql'
+brew 'mycli'
+brew 'sqlite'
+brew 'postgresql'
+brew 'redis'
+brew 'kafka'
