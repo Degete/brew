@@ -19,6 +19,7 @@ brew 'php'
 brew 'composer'
 
 # NodeJS
+brew 'nvm'
 brew 'node'
 brew 'yarn'
 
