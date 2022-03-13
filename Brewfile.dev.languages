@@ -20,6 +20,7 @@ brew 'composer'
 
 # NodeJS
 brew 'nvm'
+brew 'fnm'
 brew 'node'
 brew 'yarn'
 
