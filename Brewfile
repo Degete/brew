@@ -1,8 +1,8 @@
-cask_args appdir: '/Applications'#, require_sha: true
+cask_args appdir: '/Applications', require_sha: true
+
+cask 'mas' # https://github.com/mas-cli/mas
 
 # Fonts ==================================================================================================================
-tap 'homecask/cask-fonts' # https://github.com/ryanoasis/nerd-fonts
-
 cask 'font-fira-code' # https://github.com/tonsky/FiraCode
 cask 'font-fira-code-nerd-font'
 cask 'font-fira-mono' # https://github.com/mozilla/Fira
@@ -34,13 +34,10 @@ cask 'warp' # https://www.warp.dev/
 cask 'wezterm' # https://wezfurlong.org/wezterm/ https://github.com/wez/wezterm
 # ------------------------------------------------------------------------------------------------------------------------
 
-# Launchers --------------------------------------------------------------------------------------------------------------
-cask 'raycast' # https://www.raycast.com
-# ------------------------------------------------------------------------------------------------------------------------
-
 # Tools ------------------------------------------------------------------------------------------------------------------
 brew 'bat' # https://github.com/sharkdp/bat
 brew 'ccat' # https://github.com/owenthereal/ccat
+brew 'chezmoi' # https://github.com/twpayne/chezmoi
 brew 'curl' # https://github.com/curl/curl
 brew 'ctags' # https://github.com/universal-ctags/ctags
 brew 'eza' # https://github.com/ogham/exa
@@ -53,23 +50,33 @@ brew 'highlight' # http://www.andre-simon.de/doku/highlight/highlight.php
 brew 'imagemagick' # https://github.com/ImageMagick/ImageMagick
 brew 'jq' # https://github.com/stedolan/jq
 brew 'moreutils' # https://joeyh.name/code/moreutils/
-brew 'neofetch' # https://github.com/dylanaraps/neofetch
 brew 'macchina' # https://github.com/Macchina-CLI/macchina
 brew 'openssl' # https://github.com/openssl/openssl
 brew 'rclone' # https://github.com/rclone/rclone
 brew 'tldr' # https://github.com/tldr-pages/tldr
 brew 'translate-shell' # https://github.com/soimort/translate-shell
+brew 'tokei' # https://github.com/XAMPPRocky/tokei
 brew 'tmux' # https://github.com/tmux/tmux
 brew 'vip' # https://users.cs.duke.edu/~des/vip.html
 brew 'wget' # https://www.gnu.org/software/wget/
 brew 'watchman' # https://github.com/facebook/watchman
 brew 'xz' # https://github.com/xz-mirror/xz
 brew 'yt-dlp' # https://github.com/yt-dlp/yt-dlp
+brew 'yq' # https://github.com/mikefarah/yq
+brew 'zellij' # https://zellij.dev/ https://github.com/zellij-org/zellij
 # ------------------------------------------------------------------------------------------------------------------------
 
-# Git --------------------------------------------------------------------------------------------------------------------
-brew 'git-delta' # https://github.com/dandavison/delta
-brew 'diff-so-fancy' # https://github.com/so-fancy/diff-so-fancy
+# Text generators --------------------------------------------------------------------------------------------------------
+brew 'boxes' # https://boxes.thomasjensen.com
+brew 'chafa' # https://github.com/hpjansson/chafa
+brew 'lolcat' # https://github.com/busyloop/lolcat
+brew 'figlet' # http://www.figlet.org/
+brew 'fortune' # https://www.ibiblio.org/pub/linux/games/amusements/fortune/!INDEX.html
+brew 'toilet' # http://caca.zoy.org/wiki/toilet
+# ------------------------------------------------------------------------------------------------------------------------
+
+# Mail -------------------------------------------------------------------------------------------------------------------
+brew 'himalaya' # https://github.com/pimalaya/himalaya
 # ------------------------------------------------------------------------------------------------------------------------
 
 # File Managers ----------------------------------------------------------------------------------------------------------
@@ -87,24 +94,27 @@ brew 'the_silver_searcher' # https://geoff.greer.fm/ag/ https://github.com/ggree
 # Editors ----------------------------------------------------------------------------------------------------------------
 brew 'vim' # https://github.com/vim/vim
 brew 'neovim' # https://github.com/neovim/neovim
+brew 'neovide' # https://neovide.dev/ https://github.com/neovide/neovide
 # ------------------------------------------------------------------------------------------------------------------------
 
 # Git --------------------------------------------------------------------------------------------------------------------
 brew 'git' # https://git-scm.com https://github.com/git/git
 brew 'git-lfs' # https://git-lfs.com https://github.com/git-lfs/git-lfs
-brew 'git-flow-avh' # https://github.com/petervanderdoes/gitflow-avh
+brew 'git-delta' # https://github.com/dandavison/delta
 brew 'git-extras' # https://github.com/tj/git-extras
 brew 'git-secrets' # https://github.com/awslabs/git-secrets
+brew 'diff-so-fancy' # https://github.com/so-fancy/diff-so-fancy
 brew 'lazygit' # https://github.com/jesseduffield/lazygit
+brew 'gitui' #https://github.com/extrawurst/gitui
+brew 'tig' # https://jonas.github.io/tig
+brew 'hub' # https://hub.github.com
 brew 'pinentry-mac' # https://github.com/GPGTools/pinentry
 brew 'gh' # https://cli.github.com https://github.com/cli/cli
 # ------------------------------------------------------------------------------------------------------------------------
 
 # Media ------------------------------------------------------------------------------------------------------------------
-brew 'mpd' # https://www.musicpd.org https://github.com/MusicPlayerDaemon/MPD
 brew 'mpv' # https://mpv.io https://github.com/mpv-player/mpv
-brew 'ncmpc' # https://github.com/MusicPlayerDaemon/ncmpc
-brew 'ncmpcpp' # https://github.com/ncmpcpp/ncmpcpp
+brew 'musikcube' # https://musikcube.com https://github.com/clangen/musikcube
 # ------------------------------------------------------------------------------------------------------------------------
 
 # Monitoring -------------------------------------------------------------------------------------------------------------
@@ -127,9 +137,16 @@ brew 'llvm' # https://llvm.org https://github.com/llvm/llvm-project
 brew 'gcc' # https://gcc.gnu.org https://gcc.gnu.org/git/gcc.git
 brew 'gdb' # https://www.gnu.org/software/gdb https://sourceware.org/git/binutils-gdb.git
 
+# Lua
+brew 'lua' # https://www.lua.org/
+brew 'luarocks' # https://luarocks.org/ https://github.com/luarocks/luarocks
+
 # Python
 brew 'python' # https://www.python.org https://github.com/python/cpython
 brew 'pyenv' # https://github.com/pyenv/pyenv
+brew 'pipenv' # https://pipenv.pypa.io
+brew 'poetry' # https://python-poetry.org https://github.com/python-poetry/poetry
+brew 'black' # https://black.readthedocs.io https://github.com/psf/black
 
 # Swift
 brew 'swiftlint' # https://github.com/realm/SwiftLint
@@ -151,13 +168,14 @@ brew 'go' # https://go.dev/doc/ https://github.com/golang/go
 
 # Kotlin
 brew 'kotlin' # https://kotlinlang.org https://github.com/JetBrains/kotlin
+brew 'kotlin-language-server' # https://github.com/fwcd/kotlin-language-server
 
 # Ruby
 brew 'ruby' # https://www.ruby-lang.org https://github.com/ruby/ruby
 brew 'rbenv' # https://github.com/rbenv/rbenv
 
 # Rust
-brew 'rustup-init' # https://www.rust-lang.org https://rust-lang.github.io/rustup https://github.com/rust-lang/rustup
+brew 'rustup' # https://www.rust-lang.org https://rust-lang.github.io/rustup https://github.com/rust-lang/rustup
 brew 'rust-analyzer' # https://rust-analyzer.github.io https://github.com/rust-lang/rust-analyzer
 
 # Shellscript
@@ -168,14 +186,13 @@ brew 'postgresql' # https://www.postgresql.org https://github.com/postgres/postg
 brew 'redis' # https://redis.io https://github.com/redis/redis
 brew 'sqlite' # https://www.sqlite.org https://github.com/sqlite/sqlite
 brew 'mysql' # https://www.mysql.com https://github.com/mysql/mysql-server
+brew 'mongosh' # https://github.com/mongodb-js/mongosh
 brew 'pgcli' # https://www.pgcli.com 
 brew 'mycli' # https://www.mycli.net https://github.com/dbcli/mycli
 cask 'tableplus' # https://tableplus.com
 
 # IDEs
 cask 'visual-studio-code' # https://code.visualstudio.com https://github.com/microsoft/vscode
-# cask 'visual-studio-code-insiders' # https://code.visualstudio.com/insiders/
-cask 'intellij-idea-ce' # https://www.jetbrains.com/idea/
 
 # DevOps
 # Ansible
@@ -188,15 +205,17 @@ brew 'lazydocker' # https://github.com/jesseduffield/lazydocker
 
 # Kubernetes
 brew 'kubernetes-cli' # https://kubernetes.io https://github.com/kubernetes/kubernetes
+brew 'kubectx' # https://github.com/ahmetb/kubectx
 brew 'k9s' # https://k9scli.io https://github.com/derailed/k9s
 brew 'minikube' # https://minikube.sigs.k8s.io/docs/ https://github.com/kubernetes/minikube
 brew 'kompose' # https://kompose.io https://github.com/kubernetes/kompose
 brew 'kustomize' # https://kustomize.io https://github.com/kubernetes-sigs/kustomize
+brew 'helm' # https://helm.sh https://github.com/helm/helm
 
 # Terraform
 brew 'terraform' # https://www.terraform.io https://github.com/hashicorp/terraform
-brew 'tfenv' # https://github.com/tfutils/tfenv
-brew 'helm' # https://helm.sh https://github.com/helm/helm
+brew 'opentofu' # https://opentofu.org/ https://github.com/opentofu/opentofu
+brew 'tenv' # https://tofuutils.github.io/tenv/
 
 # Cloud cli
 brew 'awscli' # https://aws.amazon.com/cli/ https://github.com/aws/aws-cli
@@ -218,6 +237,10 @@ brew 'gradle' # https://gradle.org
 # API
 # cask 'postman' # https://www.postman.com
 # cask 'insomnia' # https://insomnia.rest https://github.com/Kong/insomnia
+
+# GRPC
+brew 'grpcurl' # https://github.com/fullstorydev/grpcurl
+brew 'grpcui' # https://github.com/fullstorydev/grpcui
 
 # Forensic
 brew 'radare2' # https://www.radare.org/ https://github.com/radareorg/radare2
@@ -257,8 +280,11 @@ cask 'firefox' # https://www.mozilla.org/firefox/
 #cask 'firefox-developer-edition' # https://www.mozilla.org/firefox/developer/
 brew 'geckodriver' # https://github.com/mozilla/geckodriver
 cask 'vivaldi' # https://vivaldi.com
-cask 'microsoft-edge' # https://www.microsoft.com/edge
 cask 'arc' 
+# ------------------------------------------------------------------------------------------------------------------------
+
+# Launchers --------------------------------------------------------------------------------------------------------------
+cask 'raycast' # https://www.raycast.com
 # ------------------------------------------------------------------------------------------------------------------------
 
 # Screensaver 
@@ -273,15 +299,13 @@ cask 'stats' # https://github.com/exelban/stats
 cask 'itsycal' # https://www.mowglii.com/itsycal/
 # ------------------------------------------------------------------------------------------------------------------------
 
-# Utilities -
+# Utilities
 cask 'appcleaner' # https://freemacsoft.net/appcleaner
-cask 'cheatsheet' # https://www.mediaatelier.com/CheatSheet
-cask 'hiddenbar' # https://github.com/dwarvesf/hidden
+cask 'jordanbaird-ice' # https://github.com/jordanbaird/Ice
 cask 'karabiner-elements' # https://karabiner-elements.pqrs.org https://github.com/pqrs-org/Karabiner-Elements
-
 # ------------------------------------------------------------------------------------------------------------------------
 
-# Window management
+# Window management ------------------------------------------------------------------------------------------------------
 cask 'rectangle' # https://rectangleapp.com https://github.com/rxhanson/Rectangle
 cask 'tiles' # https://freemacsoft.net/tiles/
 cask 'amethyst' # https://ianyh.com/amethyst/ https://github.com/ianyh/Amethyst
@@ -291,6 +315,7 @@ cask 'amethyst' # https://ianyh.com/amethyst/ https://github.com/ianyh/Amethyst
 # ------------------------------------------------------------------------------------------------------------------------
 
 # Clipboard management ---------------------------------------------------------------------------------------------------
+cask 'maccy' # https://maccy.app https://github.com/p0deje/Maccy
 # ------------------------------------------------------------------------------------------------------------------------
 
 # VPN
@@ -302,7 +327,6 @@ cask 'kekaexternalhelper' # https://github.com/aonez/Keka/wiki/Default-applicati
 
 # Image
 cask 'imageoptim' # https://imageoptim.com/mac https://github.com/ImageOptim/ImageOptim
-cask 'kap' # https://getkap.co https://github.com/wulkano/kap
 
 # FTP/SFTP
 cask 'cyberduck' # https://cyberduck.io https://github.com/iterate-ch/cyberduck
@@ -320,11 +344,6 @@ cask 'inkscape' # https://inkscape.org https://gitlab.com/inkscape/inkscape
 cask 'krita' # https://krita.org https://github.com/KDE/krita
 # ------------------------------------------------------------------------------------------------------------------------
 
-# Microsoft Office
-cask 'microsoft-office' # https://macadmins.software
-cask 'microsoft-auto-update'
-# ------------------------------------------------------------------------------------------------------------------------
-
 # SNS
 cask 'skype' # https://www.skype.com 
 brew 'weechat' # https://weechat.org https://github.com/weechat/weechat
@@ -334,28 +353,14 @@ brew 'weechat' # https://weechat.org https://github.com/weechat/weechat
 cask 'fork' # https://fork.dev https://git-fork.com
 # ------------------------------------------------------------------------------------------------------------------------
 
-# Enterteinment ----------------------------------------------------------------------------------------------------------
+# Entertainment ----------------------------------------------------------------------------------------------------------
 # eBooks
 cask 'calibre' # https://calibre-ebook.com https://github.com/kovidgoyal/calibre
 
-# Players
+# Media Players
 cask 'iina' # https://iina.io https://github.com/iina/iina
 cask 'kodi' # https://kodi.tv https://github.com/xbmc/xbmc
 cask 'vlc' # https://www.videolan.org/vlc/ https://github.com/videolan/vlc
-
-# Encoders
-cask 'handbrake' # https://handbrake.fr https://github.com/HandBrake/HandBrake
-# ------------------------------------------------------------------------------------------------------------------------
-
-# ========================================================================================================================
-
-# Gaming =================================================================================================================
-
-# Emulators --------------------------------------------------------------------------------------------------------------
-cask 'openemu' # https://openemu.org https://github.com/OpenEmu/OpenEmu
-
-# Nintendo 3DS
-cask 'citra' # https://citra-emu.org https://github.com/citra-emu/citra
 # ------------------------------------------------------------------------------------------------------------------------
 
 # ========================================================================================================================
